@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bus="http://apis.data.go.kr/1613000/ExpBusInfoService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <bus:getExpBusTrminlSchdulList>
+         <serviceKey>r90lww34FBZy05anw1gTNOD/RHNHd5Y1a6+tpUts0DVXjgcpQDuLWbb9A4qhsi6hGKb37rryBgQ80GVfUEMTWQ==</serviceKey>
+         <depTerminalId>NAEK010</depTerminalId>
+         <arrTerminalId>NAEK020</arrTerminalId>
+         <depPlandTime>20240630</depPlandTime>
+         <numOfRows>5</numOfRows>
+      </bus:getExpBusTrminlSchdulList>
+   </soapenv:Body>
+</soapenv:Envelope> 

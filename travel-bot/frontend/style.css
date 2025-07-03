@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#chatbox {
+  height: 400px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f8f8f8;
+}
+
+.user {
+  color: blue;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.bot {
+  color: green;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+input {
+  width: 60%;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 2px 2px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background: #f5f5f5;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #e0e0e0;
+}
+
+#chat-history-modal {
+  display: none;
+  position: fixed;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+#chat-history-list {
+  background: #fff;
+  margin: 40px auto;
+  padding: 24px;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0002;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+#chat-history-list h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+#chat-history-list button {
+  margin: 4px 4px;
+  padding: 6px 16px;
+  font-size: 1em;
+} 

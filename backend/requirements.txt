@@ -1,0 +1,5 @@
+flask
+requests
+langdetect
+python-dotenv
+fpdf 

@@ -1,0 +1,10 @@
+import requests
+response = requests.post(
+    "http://localhost:11434/api/generate",
+    json={
+        "model": "llama3:latest",
+        "prompt": "유럽 여행 추천해줘",
+        "stream": False
+    }
+)
+print(response.json())

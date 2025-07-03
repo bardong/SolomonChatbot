@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>여행 도우미 챗봇</title>
+  <link rel="stylesheet" href="/frontend/style.css" />
+</head>
+<body>
+  <div style="display:flex; align-items:center; justify-content:space-between;">
+    <h1 style="margin:0;">✈️ 여행 도우미 챗봇</h1>
+    <button id="reset-btn" style="margin-left:16px;">🔄 초기화</button>
+  </div>
+  <div id="chatbox"></div>
+  <div id="loading" style="display:none; text-align:center; margin:10px 0;">
+    <div style="width:100%;background:#eee;border-radius:8px;overflow:hidden;height:18px;margin-bottom:6px;">
+      <div id="progressbar" style="width:0%;height:18px;background:#4caf50;transition:width 0.4s;"></div>
+    </div>
+    <span>로딩중... 잠시만 기다려주세요.</span>
+  </div>
+  <input type="text" id="input" placeholder="메시지를 입력하세요..." />
+  <button onclick="sendMessage()">보내기</button>
+  <button id="save-chat-btn">💾 대화 저장</button>
+  <button id="open-history-btn">📜 대화 불러오기</button>
+
+  <!-- 대화 목록 모달 -->
+  <div id="chat-history-modal" style="display:none; position:fixed; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:1000;">
+    <div id="chat-history-list" style="background:#fff; margin:40px auto; padding:24px; width:400px; border-radius:12px; box-shadow:0 2px 8px #0002; max-height:80vh; overflow-y:auto;">
+      <!-- 대화 목록이 JS로 동적으로 들어감 -->
+    </div>
+  </div>
+  <script src="/frontend/script.js"></script>
+</body>
+</html> 
